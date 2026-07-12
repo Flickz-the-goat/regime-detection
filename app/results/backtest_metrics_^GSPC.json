@@ -1,0 +1,53 @@
+{
+  "cumulative_return": 0.14558666119086516,
+  "annualized_return": 0.0196853033759663,
+  "annualized_volatility": 0.17603697994083378,
+  "sharpe_ratio": 0.11073840051543926,
+  "sortino_ratio": 0.11931626335739834,
+  "max_drawdown": -0.3589555490445159,
+  "win_rate": 0.5337477797513321,
+  "avg_daily_turnover": 0.2965281730221969,
+  "num_regime_transitions": 274,
+  "n_trading_days": 1757,
+  "benchmark_cumulative_return": 1.7036581271347124,
+  "per_regime": {
+    "Bear": {
+      "n_days": 435,
+      "mean_daily_return": 0.00015488962340260838,
+      "win_rate": 0.2850574712643678,
+      "cumulative_contribution": 0.069698663785279
+    },
+    "Bull": {
+      "n_days": 454,
+      "mean_daily_return": -0.0007265925182224081,
+      "win_rate": 0.33259911894273125,
+      "cumulative_contribution": -0.2809849598092391
+    },
+    "High Volatility": {
+      "n_days": 463,
+      "mean_daily_return": 0.00040159630429081894,
+      "win_rate": 0.34557235421166305,
+      "cumulative_contribution": 0.2043488999110621
+    },
+    "Low Volatility": {
+      "n_days": 405,
+      "mean_daily_return": 0.0005246266712323135,
+      "win_rate": 0.40987654320987654,
+      "cumulative_contribution": 0.2367337130044167
+    }
+  },
+  "config": {
+    "ticker": "^GSPC",
+    "features_dir": "app/data/features",
+    "output_dir": "app/results",
+    "initial_train_size": 504,
+    "retrain_freq": 120,
+    "n_components": 4,
+    "threshold": 0.5,
+    "allow_short": false,
+    "cost_bps": 5.0,
+    "slippage_bps": 2.0,
+    "risk_free_annual": 0.0,
+    "random_state": 42
+  }
+}
